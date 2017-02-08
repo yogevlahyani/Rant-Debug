@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="RDash" ng-controller="MasterCtrl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>RDash Debug</title>
+  <!-- STYLES -->
+  <link rel="stylesheet" href="lib/css/main.min.css"/>
+  <!-- SCRIPTS -->
+  <script src="lib/js/main.min.js"></script>
+  <!-- Custom Scripts -->
+  <script type="text/javascript" src="js/dashboard.min.js"></script>
+</head>
+<body>
+  <div ui-view="login"></div>
+  <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+
+    <div ui-view="sidebar"></div>
+
+    <div id="content-wrapper">
+      <div class="page-content">
+
+        <div ui-view="header"></div>
+
+        <!-- Main Content -->
+        <div ui-view="main"></div>
+
+      </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+  </div><!-- End Page Wrapper -->
+</body>
+</html>

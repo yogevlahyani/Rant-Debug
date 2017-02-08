@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    direction: ltr!important;
+}
+
+.clients .widget .widget-body.medium {
+    height: auto;
+}
+
+.clients a.btn.add-client-btn {
+    margin: 10px 0 20px 0;
+}
+
+.clients .widget .widget-body.medium table tr td span.color-red {
+    color: #d9534f;
+}
+
+.clients .widget .widget-body.medium table tr td span.color-green {
+    color: #5cb85c;
+}
+
+.addClient ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.addClient ul li.full-width {
+    display: block;
+    width: 100%;
+}
+
+.addClient ul li {
+    display: inline-block;
+    width: 49%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.addClient ul li label {
+    display: block;
+}
+
+.addClient ul li input {
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.addClient ul li input#phone,
+.addClient ul li input#email,
+.addClient ul li input#bussinessId,
+.addClient ul li input#birthday {
+    text-align: left;
+    direction: ltr;
+}
+
+.addClient ul li input.error {
+    border: 1px solid #FF0000;
+}
+
+.addClient ul li span.error {
+    display: block;
+    margin-top: 10px;
+    color: #FF0000;
+}
+
+.addClient ul li > ul.paymentMethod li {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+}
+
+.card-wrapper {
+    margin: 50px auto;
+}
+
+.creditCardForm {
+    margin: 20px auto;
+}
+
+.creditCardForm ul li {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+}

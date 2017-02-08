@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      "text-mask-addons",
+      "/home/yogevlahyani/Desktop/Rant"
+    ]
+  ],
+  "_from": "text-mask-addons@latest",
+  "_id": "text-mask-addons@3.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/text-mask-addons",
+  "_nodeVersion": "6.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/text-mask-addons-3.1.0.tgz_1485808165064_0.2528941778000444"
+  },
+  "_npmUser": {
+    "email": "msafi@msafi.com",
+    "name": "msafi"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "text-mask-addons",
+    "raw": "text-mask-addons",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/text-mask-addons/-/text-mask-addons-3.1.0.tgz",
+  "_shasum": "5ac29d4975d73eaddb5b8cdc0468c56a17f6811b",
+  "_shrinkwrap": null,
+  "_spec": "text-mask-addons",
+  "_where": "/home/yogevlahyani/Desktop/Rant",
+  "author": {
+    "email": "msafi@msafi.com",
+    "name": "M.K. Safi"
+  },
+  "bugs": {
+    "url": "https://github.com/text-mask/text-mask/issues"
+  },
+  "dependencies": {},
+  "description": "Addons for Text Mask https://github.com/text-mask/text-mask",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "5ac29d4975d73eaddb5b8cdc0468c56a17f6811b",
+    "tarball": "https://registry.npmjs.org/text-mask-addons/-/text-mask-addons-3.1.0.tgz"
+  },
+  "homepage": "https://github.com/text-mask/text-mask/tree/master/addons/#readme",
+  "keywords": [
+    "input formatting",
+    "input mask",
+    "string formatting",
+    "string mask",
+    "text formatting",
+    "text mask"
+  ],
+  "license": "Unlicense",
+  "maintainers": [
+    {
+      "name": "browniefed",
+      "email": "browniefed@gmail.com"
+    },
+    {
+      "name": "msafi",
+      "email": "msafi@msafi.com"
+    }
+  ],
+  "name": "text-mask-addons",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/text-mask/text-mask.git"
+  },
+  "scripts": {},
+  "version": "3.1.0"
+}

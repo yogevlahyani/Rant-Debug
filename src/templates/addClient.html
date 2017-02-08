@@ -1,0 +1,105 @@
+<div class="row">
+  <div class="col-lg-12">
+      <div class="form-group addClient">
+          <ul>
+              <li>
+                  <input type="checkbox" name="isPaying" ng-model="client.isPaying" ng-click="isPayingToggle()" class="form-control toggle-one" checked data-toggle="toggle" data-on="Paying client" data-off="Non paying client" data-onstyle="success" data-offstyle="danger" />
+              </li>
+              <li>
+                  <div class="text-right">{{ priceSum }} $</div>
+              </li>
+              <li>
+                  <label for="name">Name</label>
+                  <input type="text" name="name" ng-model="client.name" class="form-control" ng-class="{ 'error': client.errors['name'] }" id="name" />
+                  <span class="error danger" ng-bind="client.errors['name']"></span>
+              </li>
+              <li>
+                  <label for="last">Last name</label>
+                  <input type="text" name="last" ng-model="client.last" class="form-control" ng-class="{ 'error': client.errors['last'] }" id="last" />
+                  <span class="error" ng-bind="client.errors['last']"></span>
+              </li>
+              <li>
+                  <label for="email">Email</label>
+                  <input type="text" text-mask="emailMaskConfig" name="email" class="form-control" ng-model="client.email" ng-class="{ 'error': client.errors['email'] }" id="email" />
+                  <span class="error" ng-bind="client.errors['email']"></span>
+              </li>
+              <li>
+                  <label for="phone">Phone number</label>
+                  <input type="tel" text-mask="phoneMaskConfig" name="phone" class="form-control" ng-model="client.phone" ng-class="{ 'error': client.errors['phone'] }" id="phone" />
+                  <span class="error" ng-bind="client.errors['phone']"></span>
+              </li>
+              <li>
+                  <label for="birthday">Birthday</label>
+                  <input type="text" text-mask="dateMaskConfig" name="birthday" class="form-control" ng-model="client.birthday" ng-class="{ 'error': client.errors['birthday'] }" id="birthday" />
+                  <span class="error" ng-bind="client.errors['birthday']"></span>
+              </li>
+              <li>
+                  <label for="bussinessId">Bussiness ID</label>
+                  <input type="text" text-mask="bussinessIdMaskConfig" name="bussinessId" class="form-control" ng-model="client.bussinessId" ng-class="{ 'error': client.errors['bussinessId'] }" id="bussinessId" />
+                  <span class="error" ng-bind="client.errors['bussinessId']"></span>
+              </li>
+              <li ng-class="{ 'hidden': !client.isPaying }">
+                  <label for="packages">Packages</label>
+                  <input type="text" name="packages" class="form-control" ng-model="client.packages" id="packages" />
+              </li>
+              <li>
+                  <label for="notesLog">Notes</label>
+                  <input type="text" name="notesLog" class="form-control" ng-model="client.notesLog" id="notesLog" />
+              </li>
+              <li ng-class="{ 'hidden': !client.isPaying }" class="full-width">
+                  <label for="paymentDetails">Payment details</label>
+                  <ul class="paymentMethod">
+                      <li>
+                          <button class="btn" ng-model="isCreditCard" ng-class="{ 'btn-success': isCreditCard, 'btn-primary': !isCreditCard }" ng-click="togglePayment('creditCard')">Credit Card</button>
+                      </li>
+                      <li>
+                          <button class="btn" ng-model="isPayPal" ng-class="{ 'btn-success': isPayPal, 'btn-primary': !isPayPal }" ng-click="togglePayment('payPal')">Paypal</button>
+                      </li>
+                  </ul>
+                  <div ng-if="isCreditCard">
+                      <form name="cardForm"
+                        data-card
+                        data-card-container="#card-container"
+                        data-placeholders="cardPlaceholders"
+                        data-options="cardOptions"
+                        data-messages="cardMessages"
+                        class="form-inline creditCardForm">
+
+                        <ul>
+                            <li>
+                                <label for="CardName">Card holder</label>
+                                <input type="text" name="CardName" class="form-control" card-name ng-model="card.name" />
+                            </li>
+                            <li>
+                                <label for="CardNumber">Card number</label>
+                                <input type="text" name="CardNumber" card-number class="form-control" ng-model="card.number" />
+                            </li>
+                            <li>
+                                <label for="CardExpiry">Card Expiration date</label>
+                                <input type="text" name="CardExpiry" class="form-control" card-expiry ng-model="card.expiry" />
+                            </li>
+                            <li>
+                                <label for="CardCvc">Card CVC</label>
+                                <input type="text" name="CardCvc" class="form-control" card-cvc ng-model="card.cvc" />
+                            </li>
+                        </ul>
+
+                        </form>
+
+                        <div id="card-container"></div>
+                    </div>
+                    <div ng-if="isPayPal">
+                        payPal
+                    </div>
+              </li>
+              <li>
+                  <label for="password">password</label>
+                  <input type="password" name="password" class="form-control" ng-model="client.password" id="password" />
+              </li>
+              <li class="full-width">
+                  <button ng-click="addClient()" class="btn btn-primary">Add client</button>
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      "angular1-text-mask",
+      "/home/yogevlahyani/Desktop/Rant"
+    ]
+  ],
+  "_from": "angular1-text-mask@latest",
+  "_id": "angular1-text-mask@1.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/angular1-text-mask",
+  "_nodeVersion": "6.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/angular1-text-mask-1.1.0.tgz_1485035887886_0.8889877591282129"
+  },
+  "_npmUser": {
+    "email": "msafi@msafi.com",
+    "name": "msafi"
+  },
+  "_npmVersion": "4.0.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "angular1-text-mask",
+    "raw": "angular1-text-mask",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular1-text-mask/-/angular1-text-mask-1.1.0.tgz",
+  "_shasum": "0cbe246f15e2b5bf72edf0cdb815733d2cab8941",
+  "_shrinkwrap": null,
+  "_spec": "angular1-text-mask",
+  "_where": "/home/yogevlahyani/Desktop/Rant",
+  "author": {
+    "name": "Thomas",
+    "url": "@PerfectPixel"
+  },
+  "bugs": {
+    "url": "https://github.com/text-mask/text-mask/issues"
+  },
+  "dependencies": {},
+  "description": "Angular 1 directive for input text masking",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "0cbe246f15e2b5bf72edf0cdb815733d2cab8941",
+    "tarball": "https://registry.npmjs.org/angular1-text-mask/-/angular1-text-mask-1.1.0.tgz"
+  },
+  "homepage": "https://github.com/text-mask/text-mask#readme",
+  "license": "Unlicense",
+  "main": "dist/angular1TextMask.js",
+  "maintainers": [
+    {
+      "name": "msafi",
+      "email": "msafi@msafi.com"
+    }
+  ],
+  "name": "angular1-text-mask",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/text-mask/text-mask.git"
+  },
+  "scripts": {},
+  "version": "1.1.0"
+}

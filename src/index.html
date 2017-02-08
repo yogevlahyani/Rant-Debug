@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="RDash" ng-controller="MasterCtrl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>RDash Debug</title>
+  <!-- STYLES -->
+  <!-- build:css lib/css/main.min.css -->
+  <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="components/rdash-ui/dist/css/rdash.css">
+  <link rel="stylesheet" type="text/css" href="components/bootstrap-rtl/dist/css/bootstrap-rtl.min.css">
+  <link rel="stylesheet" type="text/css" href="components/sweetalert2/dist/sweetalert2.min.css">
+  <link rel="stylesheet" type="text/css" href="components/bootstrap-toggle/css/bootstrap-toggle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <!-- endbuild -->
+  <!-- SCRIPTS -->
+  <!-- build:js lib/js/main.min.js -->
+  <script type="text/javascript" src="components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="components/angular-cookies/angular-cookies.min.js"></script>
+  <script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="components/es6-promise/es6-promise.auto.min.js"></script>
+  <script type="text/javascript" src="components/sweetalert2/dist/sweetalert2.min.js"></script>
+  <script type="text/javascript" src="components/bootstrap-rtl/dist/js/jquery.min.js"></script>
+  <script type="text/javascript" src="components/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+  <script type="text/javascript" src="components/angular1-text-mask/dist/angular1TextMask.js"></script>
+  <script type="text/javascript" src="components/text-mask-addons/dist/createAutoCorrectedDatePipe.js"></script>
+  <script type="text/javascript" src="components/text-mask-addons/dist/createNumberMask.js"></script>
+  <script type="text/javascript" src="components/text-mask-addons/dist/emailMask.js"></script>
+  <script type="text/javascript" src="components/angular-card/src/card.js"></script>
+  <!-- endbuild -->
+  <!-- Custom Scripts -->
+  <script type="text/javascript" src="js/dashboard.min.js"></script>
+</head>
+<body>
+  <div ui-view="login"></div>
+  <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+
+    <div ui-view="sidebar"></div>
+
+    <div id="content-wrapper">
+      <div class="page-content">
+
+        <div ui-view="header"></div>
+
+        <!-- Main Content -->
+        <div ui-view="main"></div>
+
+      </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+  </div><!-- End Page Wrapper -->
+</body>
+</html>
